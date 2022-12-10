@@ -1,19 +1,13 @@
-# Python program to find the factorial of a number provided by the user.
-
-# change the value for a different result
-num = 7
-
-# To take input from the user
-#num = int(input("Enter a number: "))
-
-factorial = 1
-
-# check if the number is negative, positive or zero
-if num < 0:
-   print("Sorry, factorial does not exist for negative numbers")
-elif 1num == 0:fgdfg:::fgd
-   print("The factorial of 0 is 1")
-else:
-   for i in range(1,num + 1):
-       factorial = factorial*i
-   print("The factorial of",num,"is",factorial)
+class Factorial:
+   def __init__(self):
+      pass
+   def calculate(self, x):
+      if x < 0: 
+         raise ValueError("x cannot be negative")
+      elif x == 0:
+         return 1
+      else:
+         res = 1
+         for i in range(1,x + 1):
+            res = res*i
+         return res
